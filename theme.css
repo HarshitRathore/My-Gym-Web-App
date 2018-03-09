@@ -1,0 +1,31 @@
+.my-header
+{
+    background-color: transparent;
+}
+.header-image
+{
+    position: fixed;
+}
+
+#my-footer
+{
+    background-color: #202529;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888886;
+}
+.footer-span
+{
+    font-size: 28px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.fa {
+    padding: 16px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}

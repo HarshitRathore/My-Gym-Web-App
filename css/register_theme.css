@@ -1,0 +1,76 @@
+#my-container
+{
+    background-color: #f5f5f5;
+    padding-bottom: 60px;
+}
+#button-selection
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.tab
+{
+    display: none;
+}
+#register-frame
+{
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 120px;
+    border: solid 1px gray;
+    background-color: white;
+}
+#r-f-top
+{
+    background-color: #fafafd;
+    border: solid 2px #202529;
+}
+#left-btn
+{
+    height: 100%;
+    background-color: inherit;
+    color: red;
+    border: none;
+    display: inline;
+}
+#right-btn
+{
+    height: 100%;
+    background-color: inherit;
+    color: red;  
+    border: none;
+    float: right;
+}
+#left-btn:hover, #right-btn:hover
+{
+    background-color: #616161;
+}
+ul
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 60px;
+}
+#r-frame
+{
+    
+}
+.span_space
+{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.r-f-header
+{
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+.r-f-content
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    padding-left: auto;
+    padding-right: auto;
+}

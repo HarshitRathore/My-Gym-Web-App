@@ -1,0 +1,111 @@
+.get-started
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+a.get-started:link
+{
+    color: white;
+    text-decoration: none;
+}
+#features
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80%;
+}
+.feature-box
+{
+    margin-top: 15px;
+    margin-bottom: 15Apx;
+    width: 50%;
+    height: 20%;
+}
+.know-more
+{
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+a.know-more:link
+{
+    color: white;
+    text-decoration: none;
+}
+.pricing
+{
+    background-color: #fafafd;
+}
+.pricing-head
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#phead-span
+{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.admin-pricing
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p-head
+{
+    background-color: #202529;
+    color: #fcd088;
+    padding: 35px;
+}
+.client-pricing
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p-foot
+{
+    background-color: #f44336;
+    color: white;
+    padding: 30px;
+}
+.price-item
+{
+    padding: 25px;
+}
+#top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid 1px #888886; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: red; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+}
+
+#top-btn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}

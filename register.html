@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gym Web App</title>
+        <link type="text/css" rel="stylesheet" href="theme.css">
+        <link type="text/css" rel="stylesheet" href="css/register_theme.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <div class="navbar-fixed">
+            <nav class="n fj">
+                <div class="nav-wrapper">
+                  <a href="index.html" class="brand-logo"><i class="material-icons">fitness_center</i>Gym Web Apps</a>
+                    <!-- Materialize side nav not too helful!! -->
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>          
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Our Clients</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="">Log in</a></li>
+                  </ul>
+                  <ul class="side-nav" id="nav-mobile">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="index.html">Link 2</a></li>
+                    <li><a href="index.html">Link 3</a></li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="my-container">
+            <div id="button-selection">
+                <div class="row">
+                    <button class="btn-large col s4 m3 push-m2" onclick="button_selection()">Admin</button>
+                    <button class="btn-large col s4 m3 push-m4" onclick="button_selection()">Client</button>
+                </div>
+            </div>
+            <div id="register-frame">
+                <div id="r-f-top">
+                    <ul>
+                        <li style="display: inline">
+                            <button id="left-btn" id="prevBtn" onclick="nextPrev(1)"><i class="material-icons left medium">chevron_left</i></button>
+                        </li>
+                        <li style="display: inline">
+                            
+                        </li>
+                        <li style="display: inline">
+                            <button id="right-btn" id="nextBtn" onclick="nextPrev(-1)"><i class="material-icons right medium">chevron_right</i></button>
+                        </li>
+                    </ul>                    
+                </div>
+                <div id="r-frame" class="row">
+                    <div class="tab">
+                        <div class="r-f-header">
+                            <h2>Step 1</h2>
+                            <p>Complete Step 1 then move forward.</p>
+                        </div>
+                        <div class="r-f-content">
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                          <input id="first_name" type="text" class="validate">
+                                          <label for="first_name">First Name</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                          <input id="last_name" type="text" class="validate">
+                                          <label for="last_name">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                      <p id="p_radio">
+                                        &nbsp;&nbsp;&nbsp;
+                                        Gender<span class="span_space"></span>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <input class="with-gap" name="group3" type="radio" id="male"/>
+                                        <label for="male">Male</label>
+                                        <span class="span_space"></span>
+                                        <input class="with-gap" name="group3" type="radio" id="female"/>
+                                        <label for="female">Female</label>
+                                      </p>
+                                    </div>
+                                    <div class="row">
+                                        &nbsp;&nbsp;&nbsp;
+                                        Date Of Birth 
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="text" class="datepicker" style="width: 11%;">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="r-f-header">
+                            <h2>Step 1</h2>
+                            <p>Complete Step 1 then move forward.</p>
+                        </div>
+                        <div class="r-f-content">
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        
+                                        <div class="input-field col s6">
+                                          <input id="last_name" type="text" class="validate">
+                                          <label for="last_name">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                      <p id="p_radio">
+                                        &nbsp;&nbsp;&nbsp;
+                                        Gender<span class="span_space"></span>
+                                        &nbsp;&nbsp;&nbsp;
+                                        
+                                        <span class="span_space"></span>
+                                        <input class="with-gap" name="group3" type="radio" id="female"/>
+                                        <label for="female">Female</label>
+                                      </p>
+                                    </div>
+                                    <div class="row">
+                                        &nbsp;&nbsp;&nbsp;
+                                        Date Of Birth 
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="text" class="datepicker" style="width: 11%;">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-large right r-f-content" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer" id="my-footer">
+          <div>
+            <div class="row">
+                <div class="col s12 m4 push-m1">
+                    <span class="footer-span">Social</span>
+                    <ul>
+                        <!-- Add font awesome icons -->
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <br>
+                        <a href="#" class="fa fa-pinterest"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </ul>
+                </div>
+                <div class="col s12 m4 push-m1">
+                    <span class="footer-span">Payment Options</span>
+                    <ul>
+                        <li>PayTM</li>
+                        <li>PayPal</li>
+                        <li>UPI</li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 push-m1">
+                    <span class="footer-span">About</span>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Disclaimer</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+    </body>
+</html>
